@@ -44,14 +44,17 @@ Contributions are welcome! If you have experience with:
 Please open an issue or pull request with your findings or contributions.
 
 ## Technical Details
-### Memory Map
-(To be filled in as analysis progresses)
 
-### Key Functions
-(To be filled in as analysis progresses)
+- **[docs/emulator-spec.md](docs/emulator-spec.md)** is a draft specification of the emulator, based on `emulator/emulator SAAB.exe`. It covers:
+  - the memory map, card bank switching and internal flash layout
+  - card loading and validation
+  - the CPU32 register file
+  - how Tech2Win replaces the pSOS+ kernel, including its TRAP #11 service codes
+  - key function addresses
+- **[images/README.md](images/README.md)** covers the PCMCIA card image (NAO.BIN) format and the three reference cards.
+- **[parsers/](parsers/)** has a Binary File Viewer parser for browsing card images in VS Code.
 
-### SAAB NAO.BIN Format
-(To be filled in as analysis progresses)
+`Tech2Win-2.336.exe` is the Tech2Win **installer**, not the emulator. The emulation code is in `emulator/emulator SAAB.exe`.
 
 ## License
 This project's original code and documentation are licensed under [appropriate license]
